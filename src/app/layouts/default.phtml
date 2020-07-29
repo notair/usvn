@@ -25,7 +25,7 @@
 			<div id="shaddow">
 				<div id="header-wrapper">
 					<a href="<?php echo $this->url(array(), 'default', true); ?>">
-						<div id="logo" style="background: transparent url('<?php echo $config->url->base . '/' . $config->site->logo ?>') no-repeat 0px 0px;"></div>
+						<div id="logo" >svn</div>
 					</a>
 					<div id="main-menu">
 						<ul>
@@ -33,7 +33,7 @@
 							<?php
 								$array = array();
 								$array['index'] = T_('Home');
-								$array['profile'] = T_('Profile');
+								$array['profile'] = T_('设置');
 								if ($this->isAdmin)
 									$array['admin'] = T_('Admin');
 								$array['logout'] = T_('Logout') . ' (' . $this->login . ')';
