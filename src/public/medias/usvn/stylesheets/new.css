@@ -27,6 +27,7 @@ html {
 body {
 	color: #000000;
 	font: 100% "Lucida Grande", Lucida, Verdana, sans-serif;
+	height:100%;
 }
 
 fieldset {
@@ -63,15 +64,34 @@ h3 {
 	padding-top: 15px;
 }
 
+input{
+/*	height: 30px;
+	margin-bottom: 10px;	*/
+	padding: 5px 10px;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+#submit{
+	padding: 0PX 20PX;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 #profile input {
 	line-height: 15px;
 	margin: 2px 0 8px 0;
 }
 
+#txthtml2 {
+	padding-bottom: 30px;
+}
+
+
 label {
 	text-align: left;
-	font-weight: bold;
 	line-height: 20px;
+	font-size: 14px;
 }
 
 .error {
@@ -112,16 +132,15 @@ div.error, div.warning {
 
 /* @group Header */
 #header {
-	background: #172933 url('<?php echo $this->images_directory ?>/header_bg2.png') repeat-x;
-	min-height: 124px;
+    background: #fdfdfd;
+    height: 50px;
+    border-bottom: 1px solid #aaa;
 }
  
 #header #shaddow {
-	min-height: 124px;
 	min-width: 950px;
 	margin-left: auto;
-	margin-right: auto;
-	background: transparent url('<?php echo $this->images_directory ?>/header_back.png') no-repeat 0px 0px;  
+	margin-right: auto;	 
 }
  
 #header #shaddow #header-wrapper {
@@ -131,14 +150,15 @@ div.error, div.warning {
 }
  
 #header #shaddow #header-wrapper #logo {
-	width: 320px;
-	height: 124px;
+	width: 320px;	
 	float: left;
+	color: #000000;
+	font-size: 2em;
+    line-height: 50px;
 /*	background: transparent url('<?php echo $this->images_directory ?>/logo_trans.png') no-repeat 0px 0px;*/
 }
  
 #header #shaddow #header-wrapper #main-menu {
-	height: 124px;
 	width: 530px;
 	float: left;
 	text-align: center;
@@ -147,14 +167,14 @@ div.error, div.warning {
  
 #header #shaddow #header-wrapper #main-menu ul {
 	display: inline;
-	float: right;
-	margin-top: 92px;
+	float: right;	
+	top: 50%;
+    position: relative;
 }
  
 #header #shaddow #header-wrapper #main-menu ul li {
 	display: inline;
-	position: relative;
-	margin-top: 92px;
+	position: relative;	
 }
  
 #header #shaddow #header-wrapper #main-menu ul li a {
@@ -165,21 +185,24 @@ div.error, div.warning {
  
 #header #shaddow #header-wrapper #main-menu ul li a span {
 	float: left;
-	margin-top: 0px;
-	padding: 1px 10px 10px 10px;
-	color: #ffffff;
+/*	margin-top: 0px;
+	padding: 10px 10px 10px 10px;	*/
+	color: #000000;
+	line-height: 50px;
+	font-size: 16px;
+	width: 110px;
 }
  
 #header #shaddow #header-wrapper #main-menu ul li a:hover {
-	background: transparent url('<?php echo $this->images_directory ?>/up_arrow.png') repeat-x center -50px;
+
 }
  
 #header #shaddow #header-wrapper #main-menu ul li a:hover span {
-	color: #ffffff;
+
 }
  
 #header #shaddow #header-wrapper #main-menu ul li a#selected {
-	background: transparent url('<?php echo $this->images_directory ?>/up_arrow.png') repeat-x center -50px;
+
 }
  
 #header #shaddow #header-wrapper #main-menu ul li a#selected span {
@@ -202,17 +225,18 @@ div.error, div.warning {
 }
  
 #container #container-wrapper #sub-menu {
-	background-color: #E4F2FD;
+	MARGIN-TOP: 20PX;
 }
  
 #container #container-wrapper #main {
-	border: 1px dotted #d6d6d6;
-	border-top: none;
-	padding: 5px;
+	border: 0px dotted #d6d6d6;
+	border-radius: 10px;
+	padding: 20px 0px;
 	font-size: 13px;
 	font-family: 'Verdana', 'Helvetica';
 	margin-left: 145px;
 	margin-right: 145px;
+	margin-top: 20px;
 }
  
 #container #container-wrapper #hspacer {
@@ -232,8 +256,8 @@ div.error, div.warning {
 div#sub-menu {
 	float: left;
 	margin: 4px 0 0;
-	width: 138px;
-	border: 1px dotted #cccccc;
+	width: 140px;
+	border: 0px dotted #cccccc;
 	overflow: hidden;
 }
 
@@ -247,19 +271,18 @@ div#sub-menu ul li {
 	padding: 0;
 	width: 100%;
 	margin: 0;
-	font-size: 13px;
+	font-size: 15px;
 }
 
 div#sub-menu ul li * {
-	padding: 3px 3px 4px;
+	padding: 10px 3px 4px;
 }
 
 div#sub-menu ul li h3 {
-	font-size: 15px;
-	color: #ddeefc;
-	background-color: #124361;
-	margin: 0;
-	text-align: center;
+	font-size: 16px;
+	color: #000000;
+	margin: 0;	
+	border-bottom: 2px solid #aaa;
 }
 
 div#sub-menu ul li a {
@@ -267,6 +290,7 @@ div#sub-menu ul li a {
 }
 
 div#sub-menu ul li a:hover {
+	border-bottom: 1px solid;
 }
 
 /* @end */
@@ -301,13 +325,13 @@ table.usvn_table, table.sortable {
 	margin: auto;
 	min-width: 300px;
 	text-decoration: none;
-	width: 90%;
+	width: 90%;	
 }
 
 table.usvn_table th, table.sortable th {
 	background-color: #124361;
 	border: 1px solid #124361;
-	padding: 3px 4px;
+	padding: 8px 4px;
 	color: #E4F2FD;
 }
 
@@ -349,9 +373,10 @@ td.comment {
 #box {
 	background-color: #F6FAFD;
 	border: 1px dotted #CCCCCC;
+	border-radius: 5px;
 	margin: auto;
 	width: 200px;
-	padding: 20px;
+	padding: 15px 30px;
 	text-align: center;
 	margin-bottom: 20px;
 }
@@ -381,6 +406,14 @@ form.usvn_form {
 
 #profile input {
 	width: 260px;
+	font-size: 16px;
+    font-weight: 600;
+}
+
+#projects_description{
+	font-size: 16px;
+    width: 260px;
+
 }
 
 /* @end */
@@ -404,6 +437,7 @@ form.usvn_form {
 	min-height: 35px;
 	padding: 5px;
 	border: 1px dotted #CCCCCC;
+	border-radius: 5px;
 }
 
 .usvn_info p {
