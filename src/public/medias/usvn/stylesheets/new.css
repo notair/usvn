@@ -287,6 +287,7 @@ div#sub-menu ul li h3 {
 
 div#sub-menu ul li a {
 	display: block;
+	border-bottom: 1px solid #fff;
 }
 
 div#sub-menu ul li a:hover {
@@ -441,8 +442,8 @@ form.usvn_form {
 }
 
 .usvn_info p {
-	font-size: 95%;
-	line-height: 130%;
+	font-size: 1.2EM;
+	line-height: 100%;
 	margin: 10px 0 12px 10px;
 }
 
